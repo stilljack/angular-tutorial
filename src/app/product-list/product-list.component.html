@@ -16,8 +16,7 @@
     Share
   </button>
 
-	<app-new-thing [product]="product">
-		<button (click)="notify.emit()">Notify Me</button>
+	<app-new-thing [product]="product" (notify)="onNotify()">
 	</app-new-thing>
 </div>
 
