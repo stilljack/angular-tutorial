@@ -8,7 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { NewThingComponent } from './new-thing/new-thing.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartService } from './new-thing/cart.service';
+import { CartService } from './cart.service';
 
 @NgModule({
   imports: [
