@@ -9,6 +9,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { NewThingComponent } from './new-thing/new-thing.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartService} from "./cart.service";
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { CartService} from "./cart.service";
     TopBarComponent,
     ProductListComponent,
     NewThingComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]

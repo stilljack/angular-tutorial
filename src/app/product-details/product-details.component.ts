@@ -12,8 +12,13 @@ export class ProductDetailsComponent implements OnInit {
   product;
   constructor(
     private route: ActivatedRoute,
+    private cartService: CartService
   ) { }
 
+  addToCart(product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }
   ngOnInit() {
   this.route.paramMap.subscribe(params => {
     console.log(params)
