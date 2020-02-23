@@ -15,8 +15,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
     ])
   ],
+  
   declarations: [
     AppComponent,
     TopBarComponent,
@@ -26,6 +28,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
   ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }
 
 
